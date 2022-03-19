@@ -1,0 +1,113 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/*Variables*/
+:root {
+    --principal: #256EFF;
+    --secondary: #01172F;
+    --third: #0B1131;
+    --text-color: #D7D6D6;
+    --font-primary: "Kanit", sans-serif;
+    --font-secondary: "Lobster", cursive;
+    --text-large: 8em;
+    --text-medium: 3.5em;
+    --text-small: 2em;   
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
+/*Helpers*/
+.flex-row {
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 14400px;
+    margin: 0 auto;
+}
+/*Header*/
+header {
+    background-color: var(--secondary);
+    color: inherit;
+}
+header .navbar {
+    min-height: 12vh;
+    justify-content: space-between;
+    padding: 0 1.8rem;
+    align-items: center;
+}
+.logo {
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: var(--text-large);
+    color: inherit;
+    flex-basis: 22%;
+    padding: 1rem;
+}
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+header .menu__item {
+    border: 2px solid var(--secondary);
+}
+.menu .menu__item:hover {
+    border: 2px solid var(--text-color);
+}
+.menu__item .menu__link {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    font-size: var(--text-medium);
+    padding: 1rem;
+}
+/*Main*/
+main {
+    background-color: var(--principal);
+    color: inherit;
+    min-height: 76vh;
+}
+#principal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+h1{
+    font-size: var(--text-medium);
+}
+#principal .principal__section article{
+    font-size: var(--text-small);
+}
+.box {
+    height: 76vh;
+    display: grid;
+    align-content: center;
+
+}
+#principal .principal__video {
+    align-self: center;
+}
+footer {
+    background-color: var(--third);
+    min-height: 12vh;
+}
