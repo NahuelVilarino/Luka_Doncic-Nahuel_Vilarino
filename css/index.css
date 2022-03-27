@@ -8,6 +8,7 @@
     --secondary: #01172F;
     --third: #0B1131;
     --text-color: #D7D6D6;
+    --gradient: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 61%,#7db9e8 99%);
     --font-primary: "Kanit", sans-serif;
     --font-secondary: "Lobster", cursive;
     --text-large: 8em;
@@ -43,7 +44,7 @@ html{
 /*Header*/
 .navegation {
     min-height: 12vh;
-    background-color: var(--secondary);
+    background: var(--gradient);
     font-family: var(--font-secondary);
 }
 .navbar-light .navbar-brand {
