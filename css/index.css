@@ -11,6 +11,7 @@
     --font-primary: "Kanit", sans-serif;
     --font-secondary: "Lobster", cursive;
     --text-large: 8em;
+    --text-medium-large: 5em;
     --text-medium: 3.5em;
     --text-small: 2em;   
 }
@@ -36,78 +37,98 @@ html{
     flex-direction: column;
 }
 .container {
-    max-width: 14400px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 /*Header*/
-header {
-    background-color: var(--secondary);
-    color: inherit;
-}
-header .navbar {
+.navegation {
     min-height: 12vh;
-    justify-content: space-between;
-    padding: 0 1.8rem;
-    align-items: center;
-}
-.logo {
-    text-decoration: none;
+    background-color: var(--secondary);
     font-family: var(--font-secondary);
-    font-size: var(--text-large);
-    color: inherit;
-    flex-basis: 22%;
-    padding: 1rem;
 }
-header .menu {
-    flex-basis: 40%;
-    justify-content: space-between;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-header .menu__item {
-    border: 2px solid var(--secondary);
-}
-.menu .menu__item:hover {
-    border: 2px solid var(--text-color);
-}
-.menu__item .menu__link {
-    font-family: var(--font-secondary);
+.navbar-light .navbar-brand {
     color: var(--text-color);
-    font-size: var(--text-medium);
-    padding: 1rem;
+    font-size: var(--text-large);
 }
-/*Main*/
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: var(--text-color);
+    font-size: var(--text-medium-large);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-color);
+}
+.navbar-toggler {
+    background-color: var(--text-color);
+}
+/*main*/
 main {
     background-color: var(--principal);
-    color: inherit;
-    min-height: 76vh;
 }
-#principal {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(1,1fr);
+#footer {
+    min-height: 12vh;
 }
-
-h1{
-    font-size: var(--text-medium);
+.card-body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--principal);
 }
-#principal .principal__section article{
+div.card_body {
+    background-color: var(--third);
+    color: var(--text-color)
+}
+div.card-header {
+    background-color: var(--third);
+    color: var(--text-color);
+    font-size: var(--text-small)
+}
+.card-text {
     font-size: var(--text-small);
 }
-.box {
-    height: 76vh;
-    display: grid;
-    align-content: center;
-
+#tables {
+    min-height: 76vh;
+    font-family: var(--font-primary);
+    color: var(--text-color);
 }
-#principal .principal__video {
-    align-self: center;
+.parrafo_tabla {
+    font-size: var(--text-small);
 }
-footer {
-    background-color: var(--third);
-    min-height: 12vh;
+#tables>section>div>h1 {
+    font-size: var(--text-medium);
+}
+#principal>div>div>h1 {
+    font-size: var(--text-medium);
+}
+.list-group-item {
+    font-size: var(--text-small);
+}
+.palmares>h2 {
+    font-size: var(--text-medium);
+    color: var(--text-color);
+}
+#trofeos>.palmares>h1 {
+    font-size: var(--text-medium-large);
+    color: var(--text-color);
+}
+#trofeos {
+    min-height: 76vh;
+}
+#fotos {
+    min-height: 76vh;
+}
+#formulario {
+    min-height: 76vh;
+}
+#exampleFormControlInput1 {
+    max-width: 40%;
+}
+#exampleFormControlTextarea1 {
+    max-width: 40%;
+}
+#formulario>h1 {
+    font-size: var(--text-medium);
+    color: var(--text-color);
+}
+.form-label {
+    font-size: var(--text-small);
+    color: var(--text-color);
 }
