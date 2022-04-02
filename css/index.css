@@ -23,7 +23,6 @@
     padding: 0;
     box-sizing: border-box
 }
-
 html{
     font-size: 62.5%;
     font-family: var(--font-primary);
@@ -44,12 +43,15 @@ html{
 /*Header*/
 .navegation {
     min-height: 12vh;
-    background: var(--gradient);
+    background: var(--secondary);
     font-family: var(--font-secondary);
 }
 .navbar-light .navbar-brand {
     color: var(--text-color);
     font-size: var(--text-large);
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: var(--text-color);
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
     color: var(--text-color);
@@ -61,26 +63,36 @@ html{
 .navbar-toggler {
     background-color: var(--text-color);
 }
+#navbarNavDropdown {
+    justify-content: flex-end;
+}
+.nav-item:hover {
+    border: 2px solid var(--text-color);
+}
+.nav-item {
+    border: 2px solid var(--secondary);
+}
 /*main*/
 main {
     background-color: var(--principal);
 }
-#footer {
-    min-height: 8vh;
-}
-.card-body {
+.first-title{
+    font-size: var(--text-medium-large);
     font-family: var(--font-primary);
     color: var(--text-color);
-    background-color: var(--principal);
 }
 div.card_body {
-    background: var(--gradient);
-    color: var(--text-color)
+    background: var(--third);
+    color: var(--text-color);
 }
 div.card-header {
-    background: var(--gradient);
+    background: var(--third);
     color: var(--text-color);
     font-size: var(--text-small)
+}
+.card {
+    background-color: var(--principal);
+    border: none;
 }
 .card-text {
     font-size: var(--text-small);
@@ -89,6 +101,12 @@ div.card-header {
     min-height: 76vh;
     font-family: var(--font-primary);
     color: var(--text-color);
+}
+.table {
+    transition: font-size 3s;
+}
+.table:hover {
+    font-size: var(--text-small);
 }
 .parrafo_tabla {
     font-size: var(--text-small);
@@ -101,6 +119,9 @@ div.card-header {
 }
 .list-group-item {
     font-size: var(--text-small);
+}
+.list-group-item:hover {
+    background-color: goldenrod;
 }
 .palmares>h2 {
     font-size: var(--text-medium);
@@ -115,21 +136,35 @@ div.card-header {
 }
 #fotos {
     min-height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #formulario {
     min-height: 76vh;
 }
 #exampleFormControlInput1 {
-    max-width: 40%;
+    max-width: 50%;
 }
 #exampleFormControlTextarea1 {
-    max-width: 40%;
+    max-width: 50%;
 }
-#formulario>h1 {
+#formulario h1 {
     font-size: var(--text-medium);
     color: var(--text-color);
+    font-family: var(--font-primary);
 }
 .form-label {
     font-size: var(--text-small);
     color: var(--text-color);
+    font-family: var(--font-primary);
+}
+.form-control:focus {
+    background: var(--principal);
+    color: var(--text-color);
+
+  }
+#footer {
+    min-height: 8vh;
+    background-color: var(--third);
 }
