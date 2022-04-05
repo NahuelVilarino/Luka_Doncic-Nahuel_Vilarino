@@ -1,0 +1,138 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+/*Variables*/
+
+:root {
+  --principal:#256EFF;
+  --secondary:#01172F;
+  --third:#0B1131;
+  --text-color:#D7D6D6;
+  --gradient:linear-gradient(to right, #1e5799 0%, #2989d8 50%, #207cca 61%, #7db9e8 99%);
+  --font-primary:"Kanit", sans-serif;
+  --font-secondary:"Lobster", cursive;
+  --text-large:8em;
+  --text-medium-large:5em;
+  --text-medium:3.5em;
+  --text-small:2em;
+}
+
+/*Reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-primary);
+  color: var(--text-color);
+}
+
+/*Helpers*/
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*Header*/
+
+.navegation {
+  min-height: 12vh;
+  background: var(--secondary);
+  font-family: var(--font-secondary);
+}
+
+.navbar-light {
+  .navbar-brand {
+    color: var(--text-color);
+    font-size: var(--text-large);
+
+    &:focus, &:hover {
+      color: var(--text-color);
+    }
+  }
+
+  .navbar-nav {
+    .nav-link.active, .show > .nav-link {
+      color: var(--text-color);
+      font-size: var(--text-medium-large);
+    }
+
+    .nav-link {
+      color: var(--text-color);
+    }
+  }
+}
+
+.navbar-toggler {
+  background-color: var(--text-color);
+}
+
+#navbarNavDropdown {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  &:hover {
+    border: 2px solid var(--text-color);
+  }
+
+  border: 2px solid var(--secondary);
+}
+
+/*main*/
+
+main {
+  background-color: var(--principal);
+}
+
+.first-title {
+  font-size: var(--text-medium-large);
+  font-family: var(--font-primary);
+  color: var(--text-color);
+}
+
+div {
+  &.card_body {
+    background: var(--third);
+    color: var(--text-color);
+  }
+
+  &.card-header {
+    background: var(--third);
+    color: var(--text-color);
+    font-size: var(--text-small);
+  }
+}
+
+.card {
+  background-color: var(--principal);
+  border: none;
+}
+
+.list-group-item {
+  font-size: var(--text-small);
+
+  &:hover {
+    background-color: goldenrod;
+  }
+}
+
+footer {
+  background-color: var(--third);
+}
