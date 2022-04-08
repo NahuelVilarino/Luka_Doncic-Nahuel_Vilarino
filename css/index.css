@@ -76,9 +76,38 @@ html{
 main {
     background-color: var(--principal);
 }
+
 .first-title{
     font-size: var(--text-medium-large);
     font-family: var(--font-primary);
+    color: var(--text-color);
+}
+.carouselExampleControlsNoTouching {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner {
+    width: 900px;
+}
+.photos-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accordion-item {
+    background-color: var(--principal);
+    color: var(--text-color);
+    font-size: var(--text-small);
+    border: 2px solid var(--text-color);
+}
+.accordion-button {
+    background-color: var(--principal);
+    color: var(--text-color);
+    font-size: var(--text-small);
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--principal);
     color: var(--text-color);
 }
 div.card_body {
@@ -111,14 +140,11 @@ div.card-header {
 .parrafo_tabla {
     font-size: var(--text-small);
 }
-#tables>section>div>h1 {
-    font-size: var(--text-medium);
-}
-#principal>div>div>h1 {
-    font-size: var(--text-medium);
-}
 .list-group-item {
     font-size: var(--text-small);
+    background-color: var(--principal);
+    color: var(--text-color);
+    border: 2.5px solid var(--text-color);
 }
 .list-group-item:hover {
     background-color: goldenrod;
@@ -127,18 +153,17 @@ div.card-header {
     font-size: var(--text-medium);
     color: var(--text-color);
 }
-#trofeos>.palmares>h1 {
-    font-size: var(--text-medium-large);
-    color: var(--text-color);
-}
 #trofeos {
     min-height: 76vh;
 }
 #fotos {
+    background-color: var(--principal);
     min-height: 76vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+.foto {
+    margin: 5px;
 }
 #formulario {
     min-height: 76vh;
@@ -149,11 +174,6 @@ div.card-header {
 #exampleFormControlTextarea1 {
     max-width: 50%;
 }
-#formulario h1 {
-    font-size: var(--text-medium);
-    color: var(--text-color);
-    font-family: var(--font-primary);
-}
 .form-label {
     font-size: var(--text-small);
     color: var(--text-color);
@@ -162,8 +182,22 @@ div.card-header {
 .form-control:focus {
     background: var(--principal);
     color: var(--text-color);
-
-  }
+}
+.second-title {
+    font-size: var(--text-medium);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+}
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+}
+.form-check-label {
+    color: var(--text-color);
+    font-size: var(--text-small);
+    font-family: var(--font-primary);
+}
 #footer {
     min-height: 8vh;
     background-color: var(--third);
