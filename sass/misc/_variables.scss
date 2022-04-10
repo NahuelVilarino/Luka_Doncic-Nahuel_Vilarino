@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+$mapcolores:(/*se declara un mapa*/
+    principal: #256EFF,
+    segundo: #01172F,
+    tercero: #0B1131,
+    colortexto: #D7D6D6, 
+);
+
+$mapfuentes:(
+    family1:  "Kanit",
+    family2: "Lobster",
+    text-large: 8em,
+    text-medium-large: 5em,
+    text-medium: 3.5em,
+    text-small: 2em,
+);

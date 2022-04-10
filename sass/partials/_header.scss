@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+.navegation {
+    color: map-get($mapcolores , colortexto);
+    background: map-get($mapcolores , segundo);
+    font-family: map-get($mapfuentes , family2);
+}
+.navbar-light {
+    .navbar-brand {
+      color: map-get($mapcolores , colortexto);
+      font-size: map-get($mapfuentes ,text-large);
+  
+      &:focus, &:hover {
+        color: map-get($mapcolores , colortexto);
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link.active, .show > .nav-link {
+        color: map-get($mapcolores , colortexto);
+        font-size: map-get($mapfuentes ,text-medium-large);
+      }
+  
+      .nav-link {
+        color: map-get($mapfuentes ,text-large);;
+      }
+    }
+  }
+  
+  .navbar-toggler {
+    background-color:map-get($mapcolores , colortexto);
+  }
+  
+  #navbarNavDropdown {
+    justify-content: flex-end;
+  }
+  
+  .nav-item {
+    &:hover {
+      border: 2px solid map-get($mapcolores , colortexto);
+    }
+  
+    border: 2px solid map-get($mapcolores , segundo);
+  }

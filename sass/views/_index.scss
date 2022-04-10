@@ -1,0 +1,46 @@
+@import "../misc/variables";
+@import "../misc/mixin";
+@import "../misc/reset";
+
+/*main*/
+
+main {
+    background-color: map-get($mapcolores , principal);
+  }
+  
+  .first-title {
+    font-size: map-get($mapfuentes ,text-medium-large);
+    font-family: map-get($mapfuentes , family1 );
+    color: map-get($mapcolores , colortexto);
+  }
+  
+  .carouselExampleControlsNoTouching {
+    @include displayflex ();
+}
+  
+  .carousel-inner {
+    width: 900px;
+  }
+  
+  .photos-home {
+    @include displayflex ();
+}
+  
+  .accordion-item {
+    background-color: map-get($mapcolores , principal);
+    color: map-get($mapcolores , colortexto);
+    font-size: map-get($mapfuentes ,text-small);
+    border: 2px solid map-get($mapcolores , colortexto);
+  }
+  
+  .accordion-button {
+    background-color: map-get($mapcolores , principal);
+    color: map-get($mapcolores , colortexto);
+    font-size: map-get($mapfuentes ,text-small);
+  
+    &:not(.collapsed) {
+      background-color: map-get($mapcolores , principal);
+      color: map-get($mapcolores , colortexto);
+    }
+  }
+

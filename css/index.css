@@ -110,22 +110,6 @@ main {
     background-color: var(--principal);
     color: var(--text-color);
 }
-div.card_body {
-    background: var(--third);
-    color: var(--text-color);
-}
-div.card-header {
-    background: var(--third);
-    color: var(--text-color);
-    font-size: var(--text-small)
-}
-.card {
-    background-color: var(--principal);
-    border: none;
-}
-.card-text {
-    font-size: var(--text-small);
-}
 #tables {
     min-height: 76vh;
     font-family: var(--font-primary);
@@ -201,4 +185,20 @@ div.card-header {
 #footer {
     min-height: 8vh;
     background-color: var(--third);
+}
+div.card_body {
+    background: var(--third);
+    color: var(--text-color);
+}
+div.card-header {
+    background: var(--third);
+    color: var(--text-color);
+    font-size: var(--text-small)
+}
+.card {
+    background-color: var(--principal);
+    border: none;
+}
+.card-text {
+    font-size: var(--text-small);
 }

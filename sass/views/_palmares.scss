@@ -1,0 +1,12 @@
+@import "../misc/variables";
+@import "../misc/mixin";
+@import "../misc/reset";
+
+.palmares > h2 {
+    font-size: map-get($mapfuentes ,text-medium);
+    color: map-get($mapcolores , colortexto);
+  }
+  
+  #trofeos {
+    min-height: 76vh;
+  }

@@ -1,0 +1,44 @@
+@import "../misc/variables";
+@import "../misc/mixin";
+@import "../misc/reset";
+
+#formulario {
+    min-height: 76vh;
+  }
+  
+  .mb-3 {
+      max-width: 50%;
+  }
+
+  #exampleFormControlInput1, #exampleFormControlTextarea1 {
+    @extend .mb-3;
+  }
+  
+  .form-label {
+    font-size: map-get($mapfuentes ,text-small);
+    color: map-get($mapcolores , colortexto);
+    font-family: map-get($mapfuentes , family1);
+  }
+  
+  .form-control:focus {
+    background: map-get($mapcolores , principal);
+    color: map-get($mapcolores , colortexto);
+  }
+  
+  .second-title {
+    font-size: map-get($mapfuentes ,text-medium);
+    color: map-get($mapcolores , colortexto);
+    font-family: map-get($mapfuentes , family1);
+  }
+  
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+  }
+  
+  .form-check-label {
+    color: map-get($mapcolores , colortexto);
+    font-size: map-get($mapfuentes ,text-small);
+    font-family: map-get($mapfuentes , family1);
+  }

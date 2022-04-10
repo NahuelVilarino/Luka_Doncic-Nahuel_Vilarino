@@ -1,0 +1,15 @@
+@import "../misc/variables";
+@import "../misc/mixin";
+@import "../misc/reset";
+
+#fotos {
+    background-color: map-get($mapcolores , principal);
+    min-height: 76vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .foto {
+    margin: 5px;
+  }
+  

@@ -1,0 +1,31 @@
+@import "../misc/variables";
+@import "../misc/mixin";
+@import "../misc/reset";
+
+
+#footer {
+    min-height: 8vh;
+    background-color: map-get($mapcolores , tercero);
+  }
+  
+  div {
+    &.card_body {
+      background: map-get($mapcolores , tercero);
+      color: map-get($mapcolores , colortexto);
+    }
+  
+    &.card-header {
+      background: map-get($mapcolores , tercero);
+      color: map-get($mapcolores , colortexto);
+      font-size: map-get($mapfuentes ,text-small);
+    }
+  }
+  
+  .card {
+    background-color: map-get($mapcolores ,principal);
+    border: none;
+  }
+  
+  .card-text {
+    font-size: map-get($mapfuentes ,text-small);
+  }
