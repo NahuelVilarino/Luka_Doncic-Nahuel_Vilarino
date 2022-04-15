@@ -88,16 +88,20 @@ div.card-header {
 main {
   background-color: #256EFF; }
 
+#principal {
+  min-height: 76vh; 
+}
 .first-title {
   font-size: 5em;
   font-family: "Kanit";
   color: #D7D6D6; }
 
-.carouselExampleControlsNoTouching {
+#carouselExampleControlsNoTouching {
   display: flex;
   justify-content: center;
-  align-items: center; }
-
+  align-items: center; 
+}
+  
 .carousel-inner {
   width: 900px; }
 
