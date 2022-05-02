@@ -9,7 +9,7 @@
   }
   
   .table {
-    transition: font-size 3s;
+    transition: font-size 1.5s;
   
     &:hover {
       font-size: map-get($mapfuentes ,text-small);

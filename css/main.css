@@ -62,7 +62,7 @@ div.card-header {
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
   color: #D7D6D6;
-  font-size: 5em; }
+  font-size: 3.8em; }
 
 .navbar-light .navbar-nav .nav-link {
   color: 8em; }
@@ -89,19 +89,19 @@ main {
   background-color: #256EFF; }
 
 #principal {
-  min-height: 76vh; 
-}
+  min-height: 76vh; }
+
 .first-title {
   font-size: 5em;
   font-family: "Kanit";
-  color: #D7D6D6; }
+  color: #D7D6D6;
+  padding: 10px; }
 
 #carouselExampleControlsNoTouching {
   display: flex;
   justify-content: center;
-  align-items: center; 
-}
-  
+  align-items: center; }
+
 .carousel-inner {
   width: 900px; }
 
@@ -135,7 +135,7 @@ main {
   color: #D7D6D6; }
 
 .table {
-  transition: font-size 3s; }
+  transition: font-size 1.5s; }
   .table:hover {
     font-size: 2em; }
 

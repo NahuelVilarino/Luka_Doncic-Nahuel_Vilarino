@@ -19,7 +19,7 @@
     .navbar-nav {
       .nav-link.active, .show > .nav-link {
         color: map-get($mapcolores , colortexto);
-        font-size: map-get($mapfuentes ,text-medium-large);
+        font-size: map-get($mapfuentes ,text-medium-medium);
       }
   
       .nav-link {

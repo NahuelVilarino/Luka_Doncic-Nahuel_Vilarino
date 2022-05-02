@@ -14,6 +14,7 @@ main {
     font-size: map-get($mapfuentes ,text-medium-large);
     font-family: map-get($mapfuentes , family1 );
     color: map-get($mapcolores , colortexto);
+    padding: 10px;
   }
   #carouselExampleControlsNoTouching {
     @include displayflex ();
