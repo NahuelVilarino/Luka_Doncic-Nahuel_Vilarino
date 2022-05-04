@@ -22,7 +22,14 @@ main {
   .carousel-inner {
     width: 900px;
   }
-  
+  .carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+  }
   .photos-home {
     @include displayflex ();
 }
@@ -44,4 +51,5 @@ main {
       color: map-get($mapcolores , colortexto);
     }
   }
+  
 

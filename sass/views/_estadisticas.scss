@@ -20,13 +20,4 @@
     font-size: map-get($mapfuentes ,text-small);
   }
   
-  .list-group-item {
-    font-size: map-get($mapfuentes ,text-small);
-    background-color: map-get($mapcolores , principal);
-    color: map-get($mapcolores , colortexto);
-    border: 2.5px solid map-get($mapcolores , colortexto);
   
-    &:hover {
-      background-color: goldenrod;
-    }
-  }

@@ -48,3 +48,6 @@
     color: map-get($mapcolores , colortexto);
     border: none;
   }
+  .mb-3.container.botones {
+    margin-bottom: 0px !important;
+  }
