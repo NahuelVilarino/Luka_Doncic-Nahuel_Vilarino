@@ -42,3 +42,9 @@
     font-size: map-get($mapfuentes ,text-small);
     font-family: map-get($mapfuentes , family1);
   }
+  .btn {
+    font-size: map-get($mapfuentes ,text-small);
+    background-color: map-get($mapcolores ,tercero);
+    color: map-get($mapcolores , colortexto);
+    border: none;
+  }

@@ -35,7 +35,9 @@
 
 div.card_body {
   background: #0B1131;
-  color: #D7D6D6; }
+  color: #D7D6D6;
+  display: flex;
+  justify-content: flex-end; }
 
 div.card-header {
   background: #0B1131;
@@ -48,6 +50,15 @@ div.card-header {
 
 .card-text {
   font-size: 2em; }
+
+.boton {
+  font-size: 3.5em;
+  background-color: #0B1131;
+  color: #D7D6D6;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px; }
 
 .navegation {
   color: #D7D6D6;
@@ -210,6 +221,12 @@ main {
   color: #D7D6D6;
   font-size: 2em;
   font-family: "Kanit"; }
+
+.btn {
+  font-size: 2em;
+  background-color: #0B1131;
+  color: #D7D6D6;
+  border: none; }
 
 html {
   font-size: 62.5%;

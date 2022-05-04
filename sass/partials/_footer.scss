@@ -12,6 +12,8 @@
     &.card_body {
       background: map-get($mapcolores , tercero);
       color: map-get($mapcolores , colortexto);
+      display: flex;
+      justify-content: flex-end;
     }
   
     &.card-header {
@@ -28,4 +30,13 @@
   
   .card-text {
     font-size: map-get($mapfuentes ,text-small);
+  }
+  .boton {
+    font-size: map-get($mapfuentes ,text-medium);
+    background-color: map-get($mapcolores ,tercero);
+    color: map-get($mapcolores , colortexto);
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
