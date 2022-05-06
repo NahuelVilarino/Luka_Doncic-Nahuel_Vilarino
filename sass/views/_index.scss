@@ -20,7 +20,7 @@ main {
     @include displayflex ();
 }
   .carousel-inner {
-    width: 900px;
+    width: 1200px;
   }
   .carousel-control-next-icon {
     width: 4rem;
@@ -29,6 +29,13 @@ main {
   .carousel-control-prev-icon {
     width: 4rem;
     height: 4rem;
+  }
+  .carousel-caption {
+    color: black;
+  }
+  .piedefoto {
+    font-size: map-get($mapfuentes ,text-medium);
+    font-family: map-get($mapfuentes , family1 );
   }
   .photos-home {
     @include displayflex ();
@@ -51,5 +58,6 @@ main {
       color: map-get($mapcolores , colortexto);
     }
   }
+  
   
 

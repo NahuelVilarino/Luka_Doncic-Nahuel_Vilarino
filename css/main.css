@@ -113,7 +113,7 @@ main {
   align-items: center; }
 
 .carousel-inner {
-  width: 900px; }
+  width: 1200px; }
 
 .carousel-control-next-icon {
   width: 4rem;
@@ -122,6 +122,13 @@ main {
 .carousel-control-prev-icon {
   width: 4rem;
   height: 4rem; }
+
+.carousel-caption {
+  color: black; }
+
+.piedefoto {
+  font-size: 3.5em;
+  font-family: "Kanit"; }
 
 .photos-home {
   display: flex;
